@@ -1,0 +1,20 @@
+# Dati runtime di MAIK (memoria salvata su disco)
+dati_maik/
+*.json.tmp
+
+# File di memoria legacy v5.0 (se generati nella cartella)
+profilo.json
+ricordi.json
+diario.json
+imparato.json
+episodi.json
+umore.json
+obiettivi.json
+relazioni.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Screenshot/artefatti temporanei
+scratch_*.png
