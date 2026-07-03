@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Kokus — Cucina Latinoamericana a Roma</title>
+<meta name="description" content="New Kokus — Pollo a la brasa, ceviche, arepas e sapori di Perù, Ecuador, Venezuela e Colombia. Due locali a Roma: Cornelia e Borghesiana. Prenota su WhatsApp!">
+<meta name="theme-color" content="#190720">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="New Kokus — Cucina Latinoamericana a Roma 🌴">
+<meta property="og:description" content="Pollo a la brasa, ceviche, arepas e tutti i sabores di Perù, Ecuador, Venezuela e Colombia. Due locali: Cornelia e Borghesiana. Prenota su WhatsApp!">
+<meta property="og:image" content="assets/storefront-night.jpg">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌴</text></svg>">
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "New Kokus 2",
+    "servesCuisine": ["Latinoamericana", "Peruviana", "Ecuadoriana", "Venezuelana", "Colombiana"],
+    "address": { "@type": "PostalAddress", "streetAddress": "Via Giovanni Tamassia 32", "addressLocality": "Roma", "addressRegion": "Lazio", "addressCountry": "IT" },
+    "telephone": "+393271746854",
+    "openingHours": ["Mo 12:00-15:30", "We-Su 12:00-15:30", "Mo 18:30-23:30", "We-Su 18:30-23:30"],
+    "acceptsReservations": "True",
+    "priceRange": "€€"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "New Kokus 3 — La Terrazza del Kokus",
+    "servesCuisine": ["Caffetteria", "Aperitivi", "Latinoamericana"],
+    "address": { "@type": "PostalAddress", "streetAddress": "Via Borghesiana 263a", "addressLocality": "Roma", "addressRegion": "Lazio", "addressCountry": "IT" },
+    "telephone": "+393271746854",
+    "priceRange": "€€"
+  }
+]
+</script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;-webkit-font-smoothing:antialiased;}
+  html{scroll-behavior:smooth;}
+  section[id]{scroll-margin-top:64px;}
+  html,body{margin:0;padding:0;background:#fff4ea;}
+  ::selection{background:#e5197f;color:#fff;}
+  @keyframes dolly{0%{transform:translateZ(0)}100%{transform:translateZ(1500px)}}
+  @keyframes sway{0%{transform:translateZ(0) rotateZ(0deg)}50%{transform:translateZ(70px) rotateZ(.45deg)}100%{transform:translateZ(0) rotateZ(-.35deg)}}
+  @keyframes riseIn{0%{opacity:0;transform:translateX(-50%) translateY(30px)}100%{opacity:1;transform:translateX(-50%) translateY(0)}}
+  @keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+  @keyframes glow{0%,100%{opacity:.5;transform:translate(-50%,-50%) translateZ(-1980px) scale(1)}50%{opacity:.85;transform:translate(-50%,-50%) translateZ(-1980px) scale(1.07)}}
+  @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+  @keyframes cue{0%{opacity:.25;transform:translate(-50%,0)}50%{opacity:1}100%{opacity:.25;transform:translate(-50%,9px)}}
+  @keyframes spinY{0%{transform:rotateY(0deg)}100%{transform:rotateY(360deg)}}
+  @keyframes flicker{0%,2.9%,5.2%,53.9%,57.2%,100%{opacity:1}3%,5%{opacity:.42}54%,57%{opacity:.55}}
+  @keyframes floatBadge{0%,100%{transform:rotate(9deg) translateY(0)}50%{transform:rotate(13deg) translateY(-12px)}}
+  @keyframes frameFloat{0%,100%{transform:translate(-50%,-50%) translateZ(-1850px) rotateY(-2deg)}50%{transform:translate(-50%,-50%) translateZ(-1818px) rotateY(3deg)}}
+  @keyframes fly{0%,100%{transform:translate3d(0,0,0) scale(1);opacity:.2}30%{opacity:.95}50%{transform:translate3d(26px,-36px,60px) scale(1.3);opacity:.55}70%{opacity:.9}}
+  @keyframes arrSway{0%{transform:rotateZ(-.5deg) translateX(-8px)}100%{transform:rotateZ(.5deg) translateX(8px)}}
+  @keyframes arrFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+  @keyframes ringPulse{0%,100%{opacity:.55}50%{opacity:1}}
+  @keyframes pulse{0%{box-shadow:0 14px 34px rgba(0,0,0,.3),0 0 0 0 rgba(30,190,95,.55)}70%{box-shadow:0 14px 34px rgba(0,0,0,.3),0 0 0 18px rgba(30,190,95,0)}100%{box-shadow:0 14px 34px rgba(0,0,0,.3),0 0 0 0 rgba(30,190,95,0)}}
+  .tilt3d{position:relative;transition:transform .45s cubic-bezier(.2,.65,.3,1);will-change:transform;}
+  .tilt3d::before{content:'';position:absolute;inset:0;border-radius:inherit;background:radial-gradient(460px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.18),transparent 46%);opacity:0;transition:opacity .35s ease;pointer-events:none;z-index:6;}
+  .tilt3d:hover::before{opacity:1;}
+  .rv{opacity:0;transform:perspective(900px) translateY(46px) rotateX(8deg);transition:opacity .8s ease,transform .95s cubic-bezier(.16,.84,.32,1);}
+  .rv.rv-in{opacity:1;transform:perspective(900px) translateY(0) rotateX(0deg);}
+  .rv-d1{transition-delay:.12s}.rv-d2{transition-delay:.24s}.rv-d3{transition-delay:.36s}
+  #arrivo{--arrx:56px;}
+  @media (max-width:640px){
+    .leaf-l{transform:scale(.5);transform-origin:top left;}
+    .leaf-r{transform:scale(.5);transform-origin:top right;}
+    #arrivo{--arrx:10px;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
+    .rv{opacity:1;transform:none}
+  }
+</style>
+</helmet>
+<div style="font-family:'Manrope',sans-serif;color:#2a0e1c;background:#fff4ea;overflow-x:hidden;position:relative;width:100%;">
+
+  <div style="position:fixed;top:0;left:0;right:0;height:4px;z-index:60;pointer-events:none;">
+    <div ref="{{ barRef }}" style="height:100%;width:0%;background:linear-gradient(90deg,#ffce5a,#e5197f);box-shadow:0 0 14px rgba(229,25,127,.65);border-radius:0 3px 3px 0;"></div>
+  </div>
+
+  <header ref="{{ hdrRef }}" style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px clamp(16px,4vw,46px);background:linear-gradient(180deg,rgba(18,4,12,.62),rgba(18,4,12,0));transition:background .35s ease,box-shadow .35s ease;">
+    <a href="#top" style="display:flex;align-items:center;gap:11px;text-decoration:none;">
+      <span style="display:grid;place-items:center;width:46px;height:33px;border-radius:50%;background:radial-gradient(circle at 50% 26%,#ff9326,#e5197f 72%);border:2px solid #ffd76a;box-shadow:0 4px 14px rgba(0,0,0,.4);font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:13px;color:#fff;letter-spacing:.5px;">MB</span>
+      <span style="display:flex;flex-direction:column;line-height:1;">
+        <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:19px;color:#fff;letter-spacing:.3px;">NEW KOKUS</span>
+        <span style="font-size:8.5px;letter-spacing:2.6px;text-transform:uppercase;color:#ffce7a;font-weight:600;margin-top:3px;">Cucina Latinoamericana</span>
+      </span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:clamp(10px,1.8vw,24px);flex-wrap:wrap;justify-content:flex-end;">
+      <a href="#menu" style="color:rgba(255,255,255,.86);text-decoration:none;font-weight:600;font-size:14px;" style-hover="color:#ffce7a;">Menù</a>
+      <a href="#locali" style="color:rgba(255,255,255,.86);text-decoration:none;font-weight:600;font-size:14px;" style-hover="color:#ffce7a;">Locali</a>
+      <a href="#arrivo" style="color:rgba(255,255,255,.86);text-decoration:none;font-weight:600;font-size:14px;" style-hover="color:#ffce7a;">Arrivare</a>
+      <a href="#galleria" style="color:rgba(255,255,255,.86);text-decoration:none;font-weight:600;font-size:14px;" style-hover="color:#ffce7a;">Galleria</a>
+      <a href="#prenota" style="color:rgba(255,255,255,.86);text-decoration:none;font-weight:600;font-size:14px;" style-hover="color:#ffce7a;">Prenota</a>
+      <a href="#contatti" style="color:rgba(255,255,255,.86);text-decoration:none;font-weight:600;font-size:14px;" style-hover="color:#ffce7a;">Contatti</a>
+      <a href="https://wa.me/393271746854" target="_blank" style="display:inline-flex;align-items:center;gap:7px;padding:9px 18px;border-radius:999px;background:#1aa24f;color:#fff;text-decoration:none;font-weight:700;font-size:14px;box-shadow:0 6px 18px rgba(26,162,79,.45);" style-hover="background:#15c25c;">WhatsApp</a>
+    </nav>
+  </header>
+
+  <section id="top" ref="{{ sceneRef }}" style="height:100vh;min-height:600px;position:relative;overflow:hidden;perspective:1000px;perspective-origin:50% 46%;background:radial-gradient(2px 2px at 18% 20%,rgba(255,255,255,.7),transparent),radial-gradient(2px 2px at 73% 14%,rgba(255,255,255,.6),transparent),radial-gradient(1.5px 1.5px at 45% 24%,rgba(255,255,255,.5),transparent),radial-gradient(1.5px 1.5px at 86% 27%,rgba(255,255,255,.5),transparent),radial-gradient(1.5px 1.5px at 8% 34%,rgba(255,255,255,.45),transparent),radial-gradient(2px 2px at 60% 8%,rgba(255,255,255,.55),transparent),radial-gradient(60% 42% at 50% 60%,rgba(255,150,70,.4),transparent 72%),linear-gradient(180deg,#190720 0%,#3c0c33 38%,#751240 64%,#b23a2d 92%);">
+
+    <div style="position:absolute;inset:0;transform-style:preserve-3d;animation:dolly 5s cubic-bezier(.22,.61,.36,1) .15s both;">
+      <div style="position:absolute;inset:0;transform-style:preserve-3d;animation:sway 16s ease-in-out 5.4s infinite;">
+
+        <div style="position:absolute;left:50%;top:48%;width:900px;height:900px;transform:translate(-50%,-50%) translateZ(-1980px);background:radial-gradient(circle,rgba(255,196,110,.55),rgba(255,120,80,.12) 45%,transparent 70%);filter:blur(6px);animation:glow 5s ease-in-out 1s infinite;"></div>
+
+        <div style="position:absolute;left:50%;top:29%;width:1150px;height:60px;transform:translate(-50%,-50%) translateZ(-2050px);background-image:radial-gradient(circle,#ffe6a0 2px,transparent 3px);background-size:42px 100%;border-radius:0 0 50% 50%;filter:drop-shadow(0 0 5px #ffcf7a);"></div>
+        <div style="position:absolute;left:50%;top:24%;width:1150px;height:60px;transform:translate(-50%,-50%) translateZ(-1560px);background-image:radial-gradient(circle,#ffe6a0 2px,transparent 3px);background-size:46px 100%;border-radius:0 0 50% 50%;filter:drop-shadow(0 0 5px #ffcf7a);"></div>
+        <div style="position:absolute;left:50%;top:21%;width:1300px;height:60px;transform:translate(-50%,-50%) translateZ(-1150px);background-image:radial-gradient(circle,#ffe6a0 2px,transparent 3px);background-size:52px 100%;border-radius:0 0 50% 50%;filter:drop-shadow(0 0 5px #ffcf7a);"></div>
+
+        <div style="position:absolute;left:50%;top:7%;transform:translate(-50%,-50%) translateZ(-1600px);padding:16px 44px;border-radius:20px;border:3px solid rgba(255,110,180,.85);background:rgba(24,5,18,.6);box-shadow:0 0 48px rgba(229,25,127,.55),inset 0 0 34px rgba(229,25,127,.3);text-align:center;animation:flicker 6s linear 5.2s infinite;">
+          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:76px;letter-spacing:6px;color:#ffe3f1;line-height:1;text-shadow:0 0 10px #ff5fae,0 0 30px #e5197f,0 0 66px #e5197f;white-space:nowrap;">NEW KOKUS</div>
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:32px;color:#ffe6a0;text-shadow:0 0 16px rgba(255,206,90,.85);margin-top:4px;">sabor latino · Roma</div>
+        </div>
+
+        <sc-for list="{{ buildings }}" as="b" hint-placeholder-count="12">
+          <div style="{{ b.style }}"></div>
+        </sc-for>
+
+        <div style="position:absolute;left:50%;top:57.5%;transform:translate(-50%,-96%) translateX(-585px) translateZ(-1180px);font-size:150px;line-height:1;filter:brightness(.17) sepia(1) hue-rotate(-20deg) drop-shadow(0 0 26px rgba(255,150,70,.3));pointer-events:none;">🌴</div>
+        <div style="position:absolute;left:50%;top:57.5%;transform:translate(-50%,-96%) translateX(600px) translateZ(-1320px) scaleX(-1);font-size:160px;line-height:1;filter:brightness(.17) sepia(1) hue-rotate(-20deg) drop-shadow(0 0 26px rgba(255,150,70,.3));pointer-events:none;">🌴</div>
+        <div style="position:absolute;left:50%;top:57.5%;transform:translate(-50%,-96%) translateX(-620px) translateZ(-1900px);font-size:120px;line-height:1;filter:brightness(.15) sepia(1) hue-rotate(-20deg) drop-shadow(0 0 22px rgba(255,150,70,.26));pointer-events:none;">🌴</div>
+        <div style="position:absolute;left:50%;top:57.5%;transform:translate(-50%,-96%) translateX(575px) translateZ(-2080px) scaleX(-1);font-size:110px;line-height:1;filter:brightness(.15) sepia(1) hue-rotate(-20deg) drop-shadow(0 0 22px rgba(255,150,70,.26));pointer-events:none;">🌴</div>
+        <div style="position:absolute;left:50%;top:57.5%;transform:translate(-50%,-96%) translateX(-560px) translateZ(-2440px);font-size:95px;line-height:1;filter:brightness(.14) sepia(1) hue-rotate(-20deg);pointer-events:none;">🌴</div>
+        <div style="position:absolute;left:50%;top:57.5%;transform:translate(-50%,-96%) translateX(640px) translateZ(-2560px) scaleX(-1);font-size:90px;line-height:1;filter:brightness(.14) sepia(1) hue-rotate(-20deg);pointer-events:none;">🌴</div>
+
+        <div style="position:absolute;left:50%;top:57%;width:1600px;height:2800px;transform:translate(-50%,0) rotateX(85deg);transform-origin:50% 0;background:linear-gradient(180deg,#2a1320 0%,#160a12 55%);"></div>
+        <div style="position:absolute;left:50%;top:57%;width:300px;height:2700px;transform:translate(-50%,0) rotateX(85deg);transform-origin:50% 0;background:linear-gradient(180deg,rgba(255,180,90,.55),rgba(255,150,70,0) 52%);filter:blur(12px);"></div>
+        <div style="position:absolute;left:50%;top:57%;width:14px;height:2600px;transform:translate(-50%,0) rotateX(85deg);transform-origin:50% 0;background:repeating-linear-gradient(180deg,rgba(255,220,140,.75) 0 60px,transparent 60px 150px);filter:blur(1px);opacity:.7;"></div>
+
+        <div style="position:absolute;left:50%;top:54%;width:1800px;height:420px;transform:translate(-50%,-50%) translateZ(-1250px);background:radial-gradient(60% 100% at 50% 60%,rgba(255,120,90,.16),transparent 70%);filter:blur(18px);pointer-events:none;"></div>
+        <div style="position:absolute;left:50%;top:55%;width:2200px;height:520px;transform:translate(-50%,-50%) translateZ(-700px);background:radial-gradient(55% 100% at 50% 62%,rgba(120,30,80,.22),transparent 70%);filter:blur(22px);pointer-events:none;"></div>
+
+        <sc-for list="{{ flies }}" as="fl" hint-placeholder-count="6">
+          <div style="{{ fl.wrap }}"><span style="{{ fl.dot }}"></span></div>
+        </sc-for>
+
+        <!--WORLDEXTRA-->
+
+        <div style="position:absolute;left:50%;top:50%;width:480px;height:854px;transform:translate(-50%,-50%) translateZ(-1850px);border-radius:10px;overflow:hidden;box-shadow:0 0 70px rgba(255,200,120,.5),0 30px 90px rgba(0,0,0,.6);outline:3px solid rgba(255,245,225,.85);outline-offset:-1px;animation:frameFloat 9s ease-in-out 5.3s infinite;">
+          <img src="assets/storefront.jpg" alt="New Kokus — Ristorante Cucina Latino Americana, Roma" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+
+      </div>
+    </div>
+
+    <div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(125% 90% at 50% 40%,transparent 44%,rgba(15,3,12,.55) 100%),linear-gradient(180deg,rgba(15,3,12,.5) 0%,transparent 22%,transparent 56%,rgba(10,2,9,.85) 100%);"></div>
+
+    <div ref="{{ fgRef }}" style="position:absolute;inset:0;z-index:4;pointer-events:none;transition:transform .25s ease-out;will-change:transform;">
+      <div class="leaf-l" style="position:absolute;top:-28px;left:-26px;filter:blur(.4px) drop-shadow(0 14px 22px rgba(0,0,0,.45));">
+        <div style="position:absolute;top:0;left:0;width:300px;height:54px;background:linear-gradient(90deg,#0e6630,#1ea24b);border-radius:0 100% 0 100%/0 100% 0 100%;transform-origin:0 50%;transform:rotate(9deg);"></div>
+        <div style="position:absolute;top:0;left:0;width:336px;height:52px;background:linear-gradient(90deg,#0b5226,#13863c);border-radius:0 100% 0 100%/0 100% 0 100%;transform-origin:0 50%;transform:rotate(27deg);"></div>
+        <div style="position:absolute;top:0;left:0;width:300px;height:48px;background:linear-gradient(90deg,#0e6630,#1a9647);border-radius:0 100% 0 100%/0 100% 0 100%;transform-origin:0 50%;transform:rotate(47deg);"></div>
+        <div style="position:absolute;top:0;left:0;width:258px;height:44px;background:linear-gradient(90deg,#10733a,#23ab50);border-radius:0 100% 0 100%/0 100% 0 100%;transform-origin:0 50%;transform:rotate(67deg);"></div>
+        <div style="position:absolute;top:0;left:0;width:214px;height:38px;background:linear-gradient(90deg,#13863c,#2bb957);border-radius:0 100% 0 100%/0 100% 0 100%;transform-origin:0 50%;transform:rotate(88deg);"></div>
+      </div>
+      <div class="leaf-r" style="position:absolute;top:-28px;right:-26px;filter:blur(.4px) drop-shadow(0 14px 22px rgba(0,0,0,.45));">
+        <div style="position:absolute;top:0;right:0;width:300px;height:54px;background:linear-gradient(270deg,#0e6630,#1ea24b);border-radius:100% 0 100% 0/100% 0 100% 0;transform-origin:100% 50%;transform:rotate(-9deg);"></div>
+        <div style="position:absolute;top:0;right:0;width:336px;height:52px;background:linear-gradient(270deg,#0b5226,#13863c);border-radius:100% 0 100% 0/100% 0 100% 0;transform-origin:100% 50%;transform:rotate(-27deg);"></div>
+        <div style="position:absolute;top:0;right:0;width:300px;height:48px;background:linear-gradient(270deg,#0e6630,#1a9647);border-radius:100% 0 100% 0/100% 0 100% 0;transform-origin:100% 50%;transform:rotate(-47deg);"></div>
+        <div style="position:absolute;top:0;right:0;width:258px;height:44px;background:linear-gradient(270deg,#10733a,#23ab50);border-radius:100% 0 100% 0/100% 0 100% 0;transform-origin:100% 50%;transform:rotate(-67deg);"></div>
+        <div style="position:absolute;top:0;right:0;width:214px;height:38px;background:linear-gradient(270deg,#13863c,#2bb957);border-radius:100% 0 100% 0/100% 0 100% 0;transform-origin:100% 50%;transform:rotate(-88deg);"></div>
+      </div>
+    </div>
+
+    <div style="position:absolute;left:50%;bottom:12%;transform:translateX(-50%);width:min(900px,88vw);text-align:center;z-index:6;animation:riseIn 1.1s ease-out 2.5s both;">
+      <div style="width:74px;height:74px;margin:0 auto 16px;position:relative;transform-style:preserve-3d;animation:spinY 7s linear infinite;">
+        <span style="position:absolute;inset:0;border-radius:50%;backface-visibility:hidden;display:grid;place-items:center;background:radial-gradient(circle at 50% 28%,#ffd76a,#f4a82c 70%);border:3px solid #fff3d0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;color:#7a1500;box-shadow:0 0 36px rgba(255,190,90,.55);">MB</span>
+        <span style="position:absolute;inset:0;border-radius:50%;backface-visibility:hidden;transform:rotateY(180deg);display:grid;place-items:center;background:radial-gradient(circle at 50% 28%,#ff7fb8,#d10f74 70%);border:3px solid #ffd7ea;font-size:30px;box-shadow:0 0 36px rgba(229,25,127,.5);">🌴</span>
+      </div>
+      <div style="font-family:'Caveat',cursive;font-weight:700;font-size:clamp(24px,3.4vw,34px);color:#ffd27a;letter-spacing:.4px;margin-bottom:6px;text-shadow:0 2px 18px rgba(0,0,0,.5);">¡Bienvenidos al New Kokus!</div>
+      <h1 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(38px,7.2vw,86px);line-height:.96;letter-spacing:-1.5px;color:#fff6ee;text-shadow:0 4px 34px rgba(0,0,0,.55);">Sapore <span style="color:#ffc14a;">latinoamericano</span><br>nel cuore di Roma</h1>
+      <p style="max-width:600px;margin:18px auto 0;font-size:clamp(15px,1.7vw,19px);line-height:1.5;color:rgba(255,240,232,.92);text-shadow:0 2px 14px rgba(0,0,0,.5);">Pollo a la brasa, ceviche, arepas e tutti i <em style="font-style:normal;color:#ffd27a;">sabores</em> di Perù, Ecuador, Venezuela e Colombia. Cucina autentica, festa garantita.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:26px;">
+        <a href="#menu" style="display:inline-flex;align-items:center;gap:9px;padding:15px 30px;border-radius:999px;background:linear-gradient(180deg,#f12b91,#d10f74);color:#fff;font-weight:700;font-size:16px;text-decoration:none;box-shadow:0 12px 34px rgba(209,15,116,.5);transition:transform .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px) scale(1.02);box-shadow:0 20px 46px rgba(209,15,116,.65);">Scopri il menù →</a>
+        <a href="https://wa.me/393271746854?text=Ciao%20New%20Kokus!%20Vorrei%20prenotare%20un%20tavolo" target="_blank" style="display:inline-flex;align-items:center;gap:9px;padding:15px 28px;border-radius:999px;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.55);color:#fff;font-weight:700;font-size:16px;text-decoration:none;backdrop-filter:blur(6px);transition:transform .25s ease,background .25s ease;" style-hover="background:#19a64f;border-color:#19a64f;transform:translateY(-3px);">Prenota su WhatsApp</a>
+      </div>
+      <div style="margin-top:22px;font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.72);font-weight:600;">Cornelia · Borghesiana — Roma</div>
+    </div>
+
+    <div style="position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:6;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.75);font-weight:600;animation:cue 1.8s ease-in-out 3.4s infinite;">entra ↓</div>
+
+  </section>
+
+  <div style="position:relative;z-index:2;transform:rotate(-1.2deg) scale(1.03);margin:-12px 0;box-shadow:0 26px 60px rgba(197,15,106,.35);">
+    <div style="background:linear-gradient(180deg,#e5197f,#c50f6a);overflow:hidden;border-top:3px solid #ffce5a;border-bottom:3px solid #ffce5a;padding:13px 0;white-space:nowrap;">
+      <div style="display:inline-flex;animation:marquee 32s linear infinite;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:clamp(15px,1.9vw,21px);letter-spacing:1.2px;color:#ffe7b8;text-transform:uppercase;">
+        <span style="flex:0 0 auto;white-space:nowrap;">Pollo a la Brasa<span style="color:#ffd76a;padding:0 22px;">✦</span>Ceviche<span style="color:#9bf2b0;padding:0 22px;">✦</span>Lomo Saltado<span style="color:#ffd76a;padding:0 22px;">✦</span>Arepas<span style="color:#9bf2b0;padding:0 22px;">✦</span>Encebollado<span style="color:#ffd76a;padding:0 22px;">✦</span>Anticuchos<span style="color:#9bf2b0;padding:0 22px;">✦</span>Arroz Chaufa<span style="color:#ffd76a;padding:0 22px;">✦</span>Seco de Pollo<span style="color:#9bf2b0;padding:0 22px;">✦</span>Leche de Tigre<span style="color:#ffd76a;padding:0 22px;">✦</span>Desayunos Latinos<span style="color:#9bf2b0;padding:0 22px;">✦</span></span>
+        <span style="flex:0 0 auto;white-space:nowrap;">Pollo a la Brasa<span style="color:#ffd76a;padding:0 22px;">✦</span>Ceviche<span style="color:#9bf2b0;padding:0 22px;">✦</span>Lomo Saltado<span style="color:#ffd76a;padding:0 22px;">✦</span>Arepas<span style="color:#9bf2b0;padding:0 22px;">✦</span>Encebollado<span style="color:#ffd76a;padding:0 22px;">✦</span>Anticuchos<span style="color:#9bf2b0;padding:0 22px;">✦</span>Arroz Chaufa<span style="color:#ffd76a;padding:0 22px;">✦</span>Seco de Pollo<span style="color:#9bf2b0;padding:0 22px;">✦</span>Leche de Tigre<span style="color:#ffd76a;padding:0 22px;">✦</span>Desayunos Latinos<span style="color:#9bf2b0;padding:0 22px;">✦</span></span>
+      </div>
+    </div>
+  </div>
+
+  <section style="padding:clamp(62px,9vw,116px) clamp(20px,5vw,72px);background:#fff4ea;position:relative;">
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(34px,5vw,70px);align-items:center;">
+      <div class="rv">
+        <div style="display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#d10f74;margin-bottom:20px;"><span style="width:26px;height:2px;background:#d10f74;"></span>Chi siamo · Quiénes somos</div>
+        <h2 style="margin:0 0 22px;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(30px,4.6vw,52px);line-height:1.02;letter-spacing:-.8px;color:#2a0e1c;">Due locali, un solo <span style="color:#e5197f;">sabor</span>: l'America Latina a&nbsp;Roma.</h2>
+        <p style="margin:0 0 16px;font-size:clamp(15px,1.55vw,18px);line-height:1.65;color:#5a3a30;max-width:540px;">Il New Kokus è il punto d'incontro della comunità latina di Roma: ricette autentiche di <strong style="color:#2a0e1c;">Perù, Ecuador, Venezuela e Colombia</strong>, porzioni generose e quella festa che solo la cucina latinoamericana sa portare in tavola. Dalla brace al ceviche, dalle arepas ai desayunos.</p>
+        <p style="margin:0 0 26px;font-family:'Caveat',cursive;font-weight:700;font-size:23px;line-height:1.3;color:#1aa24f;">Cocina casera, sabor de casa — como en familia, en el corazón de Roma.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+          <span style="display:inline-flex;align-items:center;gap:7px;padding:6px 13px 6px 7px;border-radius:999px;background:#fff;border:1px solid #f0d8c8;font-weight:600;font-size:13px;color:#5a2a1a;box-shadow:0 2px 8px rgba(120,40,20,.06);"><span style="width:22px;height:15px;border-radius:3px;background:linear-gradient(90deg,#d91023 33%,#fff 33% 66%,#d91023 66%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.1);"></span>Perú</span>
+          <span style="display:inline-flex;align-items:center;gap:7px;padding:6px 13px 6px 7px;border-radius:999px;background:#fff;border:1px solid #f0d8c8;font-weight:600;font-size:13px;color:#5a2a1a;box-shadow:0 2px 8px rgba(120,40,20,.06);"><span style="width:22px;height:15px;border-radius:3px;background:linear-gradient(180deg,#ffd100 0 50%,#0072c6 50% 75%,#ef3340 75%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.1);"></span>Ecuador</span>
+          <span style="display:inline-flex;align-items:center;gap:7px;padding:6px 13px 6px 7px;border-radius:999px;background:#fff;border:1px solid #f0d8c8;font-weight:600;font-size:13px;color:#5a2a1a;box-shadow:0 2px 8px rgba(120,40,20,.06);"><span style="width:22px;height:15px;border-radius:3px;background:linear-gradient(180deg,#ffcc00 33%,#00247d 33% 66%,#cf142b 66%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.1);"></span>Venezuela</span>
+          <span style="display:inline-flex;align-items:center;gap:7px;padding:6px 13px 6px 7px;border-radius:999px;background:#fff;border:1px solid #f0d8c8;font-weight:600;font-size:13px;color:#5a2a1a;box-shadow:0 2px 8px rgba(120,40,20,.06);"><span style="width:22px;height:15px;border-radius:3px;background:linear-gradient(180deg,#fcd116 50%,#003893 50% 75%,#ce1126 75%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.1);"></span>Colombia</span>
+          <span style="display:inline-flex;align-items:center;padding:6px 14px;border-radius:999px;background:#2a0e1c;color:#ffce7a;font-weight:600;font-size:13px;">+ tutta l'América Latina</span>
+        </div>
+      </div>
+      <div class="tilt3d rv rv-d1" data-tilt-max="6" style="position:relative;border-radius:18px;">
+        <div style="border-radius:18px;overflow:hidden;transform:rotate(-2deg);box-shadow:0 30px 64px rgba(120,20,70,.24);border:6px solid #fff;">
+          <img src="assets/interior.jpg" alt="Sala del ristorante New Kokus" style="width:100%;height:clamp(330px,42vw,470px);object-fit:cover;display:block;">
+        </div>
+        <div style="position:absolute;left:-12px;bottom:-20px;background:linear-gradient(180deg,#f12b91,#d10f74);color:#fff;padding:13px 18px;border-radius:14px;transform:rotate(-3deg);box-shadow:0 14px 30px rgba(209,15,116,.4);border:2px solid #ffd76a;">
+          <div style="font-size:14px;letter-spacing:3px;color:#ffd76a;">★★★★★</div>
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:22px;line-height:1;margin-top:3px;">Para la gente del Kokus</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" style="padding:clamp(62px,9vw,116px) clamp(20px,5vw,72px);background:linear-gradient(180deg,#fff4ea,#fbe9da);position:relative;">
+    <div style="max-width:1180px;margin:0 auto;">
+      <div class="rv" style="text-align:center;margin-bottom:46px;">
+        <div style="display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#d10f74;margin-bottom:16px;"><span style="width:26px;height:2px;background:#d10f74;"></span>Menù · La carta<span style="width:26px;height:2px;background:#d10f74;"></span></div>
+        <h2 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(32px,5vw,58px);line-height:1;letter-spacing:-1px;color:#2a0e1c;">Le nostre <span style="color:#e5197f;">especialidades</span></h2>
+        <p style="margin:14px auto 0;max-width:560px;font-size:16px;line-height:1.6;color:#7a5648;">Cucina autentica dal Sud America. Chiedi sempre il <strong style="color:#2a0e1c;">menù del día</strong> e le proposte di pesce fresco.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:44px;">
+        <div class="tilt3d rv" data-tilt-max="8" style="position:relative;border-radius:16px;overflow:hidden;box-shadow:0 16px 36px rgba(120,30,70,.14);">
+          <img src="assets/desayunos.jpg" alt="Desayunos latinos" style="width:100%;height:240px;object-fit:cover;display:block;">
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 38%,rgba(20,4,12,.8));display:flex;align-items:flex-end;padding:18px;"><div><div style="color:#ffd76a;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;">Mattina</div><div style="color:#fff;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px;">Desayunos latinos</div></div></div>
+        </div>
+        <div class="tilt3d rv rv-d1" data-tilt-max="8" style="position:relative;border-radius:16px;overflow:hidden;box-shadow:0 16px 36px rgba(120,30,70,.14);">
+          <img src="assets/arepas.jpg" alt="Le arepas del New Kokus" style="width:100%;height:240px;object-fit:cover;display:block;">
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 38%,rgba(20,4,12,.8));display:flex;align-items:flex-end;padding:18px;"><div><div style="color:#ffd76a;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;">A modo nostro</div><div style="color:#fff;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px;">Arepas & Cachapas</div></div></div>
+        </div>
+        <div class="tilt3d rv rv-d2" data-tilt-max="8" style="position:relative;border-radius:16px;overflow:hidden;box-shadow:0 16px 36px rgba(120,30,70,.14);">
+          <img src="assets/terrazza.jpg" alt="La Terrazza del Kokus" style="width:100%;height:240px;object-fit:cover;display:block;">
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 38%,rgba(20,4,12,.8));display:flex;align-items:flex-end;padding:18px;"><div><div style="color:#ffd76a;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;">Aperitivo</div><div style="color:#fff;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:21px;">Cocktail & apericena</div></div></div>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:center;margin-bottom:24px;">
+        <sc-if value="{{ notEditing }}" hint-placeholder-val="{{ true }}">
+          <button type="button" onClick="{{ startEdit }}" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:999px;border:1.5px dashed #d8b39e;background:rgba(255,255,255,.6);color:#9a6a52;font-weight:700;font-size:13px;cursor:pointer;font-family:inherit;" style-hover="border-color:#e5197f;color:#d10f74;background:#fff;">✎ Gestione menù — modifica piatti e prezzi</button>
+        </sc-if>
+        <sc-if value="{{ editing }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-wrap:wrap;gap:9px;align-items:center;justify-content:center;background:#2a0e1c;border-radius:16px;padding:10px 12px;box-shadow:0 14px 34px rgba(42,14,28,.3);">
+            <span style="color:#ffce7a;font-weight:800;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;padding:0 8px;">✎ Modalità gestione</span>
+            <button type="button" onClick="{{ addCat }}" style="padding:9px 16px;border-radius:999px;border:none;background:rgba(255,255,255,.12);color:#fff;font-weight:700;font-size:13px;cursor:pointer;font-family:inherit;" style-hover="background:rgba(255,255,255,.22);">+ Categoria</button>
+            <button type="button" onClick="{{ resetMenu }}" style="padding:9px 16px;border-radius:999px;border:none;background:rgba(255,255,255,.12);color:#ffb3b3;font-weight:700;font-size:13px;cursor:pointer;font-family:inherit;" style-hover="background:rgba(255,255,255,.22);">↺ Ripristina originale</button>
+            <button type="button" onClick="{{ stopEdit }}" style="padding:9px 18px;border-radius:999px;border:none;background:#1aa24f;color:#fff;font-weight:800;font-size:13px;cursor:pointer;font-family:inherit;" style-hover="background:#15c25c;">✓ Fatto</button>
+          </div>
+        </sc-if>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px;">
+
+        <sc-for list="{{ cats }}" as="cat" hint-placeholder-count="4">
+          <div class="tilt3d rv" data-tilt-max="4" style="background:#fff;border-radius:18px;padding:26px 26px 14px;box-shadow:0 16px 40px rgba(120,30,70,.08);border:1px solid #f3e2d6;">
+            <sc-if value="{{ cat.view }}" hint-placeholder-val="{{ true }}">
+              <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:14px;"><h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;color:#2a0e1c;">{{ cat.title }}</h3><span style="font-family:'Caveat',cursive;font-size:19px;color:#1aa24f;font-weight:700;">{{ cat.sub }}</span></div>
+              <sc-for list="{{ cat.items }}" as="it" hint-placeholder-count="4">
+                <div style="display:flex;align-items:baseline;gap:10px;padding:10px 0;border-bottom:1px dashed #efdccd;"><div style="flex:1;min-width:0;"><div style="font-weight:700;color:#2a0e1c;font-size:15.5px;">{{ it.n }}</div><div style="font-size:12.5px;color:#9a7a6c;margin-top:2px;">{{ it.d }}</div></div><span style="font-weight:800;color:#d10f74;font-size:15px;white-space:nowrap;">{{ it.p }}</span></div>
+              </sc-for>
+            </sc-if>
+            <sc-if value="{{ cat.edit }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;align-items:center;gap:7px;margin-bottom:14px;">
+                <input value="{{ cat.title }}" onChange="{{ cat.onTitle }}" placeholder="Categoria" style="flex:1;min-width:0;padding:9px 12px;border-radius:9px;border:1.5px dashed #e5197f;background:#fff8f2;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:17px;color:#2a0e1c;outline:none;">
+                <input value="{{ cat.sub }}" onChange="{{ cat.onSub }}" placeholder="sottotitolo" style="width:104px;padding:9px 10px;border-radius:9px;border:1.5px dashed #f0d8c8;background:#fff8f2;font-family:inherit;font-size:13px;color:#1aa24f;outline:none;">
+                <button type="button" onClick="{{ cat.removeCat }}" title="Elimina categoria" style="flex:0 0 auto;width:32px;height:32px;border-radius:9px;border:none;background:#fdeaea;color:#cc2222;font-weight:800;font-size:15px;cursor:pointer;font-family:inherit;" style-hover="background:#f8caca;">×</button>
+              </div>
+              <sc-for list="{{ cat.items }}" as="it" hint-placeholder-count="4">
+                <div style="display:flex;align-items:center;gap:7px;padding:7px 0;border-bottom:1px dashed #efdccd;">
+                  <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:5px;">
+                    <input value="{{ it.n }}" onChange="{{ it.onN }}" placeholder="Nome piatto" style="width:100%;padding:8px 10px;border-radius:8px;border:1px solid #f0d8c8;background:#fffdfb;font-family:inherit;font-weight:700;font-size:14px;color:#2a0e1c;outline:none;">
+                    <input value="{{ it.d }}" onChange="{{ it.onD }}" placeholder="Descrizione" style="width:100%;padding:8px 10px;border-radius:8px;border:1px solid #f0d8c8;background:#fffdfb;font-family:inherit;font-size:12.5px;color:#9a7a6c;outline:none;">
+                  </div>
+                  <input value="{{ it.p }}" onChange="{{ it.onP }}" placeholder="€" style="width:58px;padding:8px 6px;border-radius:8px;border:1px solid #f0d8c8;background:#fffdfb;font-family:inherit;font-weight:800;font-size:13px;color:#d10f74;text-align:center;outline:none;">
+                  <button type="button" onClick="{{ it.rm }}" title="Elimina piatto" style="flex:0 0 auto;width:28px;height:28px;border-radius:8px;border:none;background:#fdeaea;color:#cc2222;font-weight:800;font-size:14px;cursor:pointer;font-family:inherit;" style-hover="background:#f8caca;">×</button>
+                </div>
+              </sc-for>
+              <button type="button" onClick="{{ cat.addItem }}" style="margin:12px 0 10px;padding:9px 16px;border-radius:999px;border:1.5px dashed #1aa24f;background:#f0fbf3;color:#128a41;font-weight:700;font-size:13px;cursor:pointer;font-family:inherit;" style-hover="background:#dff7e7;">+ Aggiungi piatto</button>
+            </sc-if>
+          </div>
+        </sc-for>
+
+        <div class="tilt3d rv" data-tilt-max="4" style="background:linear-gradient(165deg,#2a0e1c,#4a1330);border-radius:18px;padding:26px;box-shadow:0 16px 40px rgba(120,30,70,.18);grid-column:span 1;">
+          <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:16px;"><h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;color:#fff;">Dulces & Bebidas</h3></div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;">
+            <span style="padding:6px 13px;border-radius:999px;background:rgba(255,255,255,.1);color:#ffd76a;font-size:13px;font-weight:600;">Inca Kola</span>
+            <span style="padding:6px 13px;border-radius:999px;background:rgba(255,255,255,.1);color:#ffd76a;font-size:13px;font-weight:600;">Chicha Morada</span>
+            <span style="padding:6px 13px;border-radius:999px;background:rgba(255,255,255,.1);color:#ffd76a;font-size:13px;font-weight:600;">Coca-Cola</span>
+            <span style="padding:6px 13px;border-radius:999px;background:rgba(255,255,255,.1);color:#ffd76a;font-size:13px;font-weight:600;">Cerveza</span>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:10px;padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.16);"><div style="flex:1;"><div style="font-weight:700;color:#fff;font-size:15.5px;">Jugos naturales</div><div style="font-size:12.5px;color:#d8b3c4;margin-top:2px;">Maracuyá, mora, lúcuma</div></div><span style="font-weight:800;color:#ffce5a;font-size:15px;">5€</span></div>
+          <div style="display:flex;align-items:baseline;gap:10px;padding:9px 0;"><div style="flex:1;"><div style="font-weight:700;color:#fff;font-size:15.5px;">Postre del día</div><div style="font-size:12.5px;color:#d8b3c4;margin-top:2px;">Dolce della casa · chiedi al personale</div></div><span style="font-weight:800;color:#ffce5a;font-size:15px;">6€</span></div>
+        </div>
+
+      </div>
+      <p style="text-align:center;margin:30px auto 0;font-size:13px;color:#a07f70;">I prezzi possono variare. Menù completo e proposte del giorno in sala. Le modifiche in modalità gestione si salvano su questo dispositivo.</p>
+    </div>
+  </section>
+
+  <sc-if value="{{ mostraCombo }}" hint-placeholder-val="{{ true }}">
+  <section id="combo" style="padding:clamp(62px,9vw,114px) clamp(20px,5vw,72px);background:linear-gradient(135deg,#e5197f 0%,#b30f63 55%,#8a0c4e 100%);position:relative;overflow:hidden;color:#fff;">
+    <div style="position:absolute;top:-120px;right:-80px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(255,206,90,.32),transparent 68%);pointer-events:none;animation:bob 7s ease-in-out infinite;"></div>
+    <div style="position:absolute;bottom:-140px;left:-100px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(255,127,184,.25),transparent 68%);pointer-events:none;animation:bob 9s ease-in-out 1.5s infinite;"></div>
+    <div style="max-width:1160px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:clamp(34px,5vw,66px);align-items:center;position:relative;">
+      <div class="tilt3d rv" data-tilt-max="8" style="position:relative;justify-self:center;border-radius:16px;">
+        <div style="border-radius:16px;overflow:hidden;transform:rotate(-2.5deg);box-shadow:0 34px 74px rgba(0,0,0,.4);border:7px solid #fff;max-width:360px;">
+          <img src="assets/combo.jpg" alt="Combo 3 — Pollo a la Brasa" style="width:100%;display:block;">
+        </div>
+        <div style="position:absolute;right:-16px;top:-20px;width:108px;height:108px;border-radius:50%;background:radial-gradient(circle at 50% 32%,#ffe879,#f4a82c);display:grid;place-items:center;box-shadow:0 14px 30px rgba(0,0,0,.34);border:3px solid #fff;animation:floatBadge 5s ease-in-out infinite;">
+          <div style="text-align:center;line-height:1;"><div style="font-size:10px;font-weight:800;color:#7a3b00;letter-spacing:1px;">SOLO</div><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:31px;color:#7a1500;margin-top:1px;">{{ comboPrezzo }}</div></div>
+        </div>
+      </div>
+      <div class="rv rv-d1">
+        <div style="display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#ffd76a;margin-bottom:16px;"><span style="width:26px;height:2px;background:#ffd76a;"></span>L'offerta · Para llevar</div>
+        <h2 style="margin:0 0 8px;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(30px,4.4vw,50px);line-height:1.02;letter-spacing:-.8px;">Combo 3 — Pollo a la Brasa</h2>
+        <p style="margin:0 0 22px;font-family:'Caveat',cursive;font-weight:700;font-size:25px;color:#ffd76a;">con leña y carbón · para compartir</p>
+        <ul style="list-style:none;margin:0 0 24px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:11px 18px;">
+          <li style="display:flex;align-items:center;gap:11px;font-size:15.5px;font-weight:600;"><span style="flex:0 0 auto;width:21px;height:21px;border-radius:50%;background:#1aa24f;display:grid;place-items:center;color:#fff;font-size:12px;font-weight:800;">✓</span>1 Pollo a la Brasa</li>
+          <li style="display:flex;align-items:center;gap:11px;font-size:15.5px;font-weight:600;"><span style="flex:0 0 auto;width:21px;height:21px;border-radius:50%;background:#1aa24f;display:grid;place-items:center;color:#fff;font-size:12px;font-weight:800;">✓</span>1 Chaufa de Pollo</li>
+          <li style="display:flex;align-items:center;gap:11px;font-size:15.5px;font-weight:600;"><span style="flex:0 0 auto;width:21px;height:21px;border-radius:50%;background:#1aa24f;display:grid;place-items:center;color:#fff;font-size:12px;font-weight:800;">✓</span>1 Porción de Anticuchos</li>
+          <li style="display:flex;align-items:center;gap:11px;font-size:15.5px;font-weight:600;"><span style="flex:0 0 auto;width:21px;height:21px;border-radius:50%;background:#1aa24f;display:grid;place-items:center;color:#fff;font-size:12px;font-weight:800;">✓</span>1 Porción de Papas Fritas</li>
+          <li style="display:flex;align-items:center;gap:11px;font-size:15.5px;font-weight:600;"><span style="flex:0 0 auto;width:21px;height:21px;border-radius:50%;background:#1aa24f;display:grid;place-items:center;color:#fff;font-size:12px;font-weight:800;">✓</span>Gaseosa 1,5 lt</li>
+          <li style="display:flex;align-items:center;gap:11px;font-size:15.5px;font-weight:600;"><span style="flex:0 0 auto;width:21px;height:21px;border-radius:50%;background:#1aa24f;display:grid;place-items:center;color:#fff;font-size:12px;font-weight:800;">✓</span>Ensalada</li>
+        </ul>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:18px;">
+          <div style="display:inline-flex;align-items:center;gap:16px;background:#fff;border-radius:16px;padding:14px 22px;box-shadow:0 16px 36px rgba(0,0,0,.24);">
+            <div><div style="font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:#9a7a6c;font-weight:700;">Precio para llevar</div><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:46px;line-height:.92;color:#d10f74;">{{ comboPrezzo }}</div></div>
+            <div style="width:1px;height:44px;background:#eedccd;"></div>
+            <div style="font-size:12.5px;color:#7a5648;line-height:1.4;max-width:135px;">+10€ per mangiare al ristorante</div>
+          </div>
+          <a href="https://wa.me/393271746854?text=Ciao%20New%20Kokus!%20Vorrei%20ordinare%20il%20Combo%203%20(Pollo%20a%20la%20Brasa)" target="_blank" style="display:inline-flex;align-items:center;gap:9px;padding:16px 26px;border-radius:999px;background:#1aa24f;color:#fff;font-weight:700;font-size:16px;text-decoration:none;box-shadow:0 14px 32px rgba(0,0,0,.28);transition:transform .25s ease,background .25s ease;" style-hover="background:#15c25c;transform:translateY(-3px);">Ordina su WhatsApp →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </sc-if>
+
+  <section id="locali" style="padding:clamp(62px,9vw,116px) clamp(20px,5vw,72px);background:#fff4ea;">
+    <div style="max-width:1180px;margin:0 auto;">
+      <div class="rv" style="text-align:center;margin-bottom:44px;">
+        <div style="display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#d10f74;margin-bottom:16px;"><span style="width:26px;height:2px;background:#d10f74;"></span>I nostri locali · Nuestros locales<span style="width:26px;height:2px;background:#d10f74;"></span></div>
+        <h2 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(32px,5vw,56px);line-height:1;letter-spacing:-1px;color:#2a0e1c;">Due indirizzi, <span style="color:#e5197f;">tutta Roma latina</span></h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:26px;">
+
+        <div class="tilt3d rv" data-tilt-max="5" style="background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 22px 54px rgba(120,30,70,.14);border:1px solid #f3e2d6;display:flex;flex-direction:column;">
+          <div style="position:relative;">
+            <img src="assets/storefront-night.jpg" alt="New Kokus 2 — Ristorante" style="width:100%;height:250px;object-fit:cover;display:block;">
+            <span style="position:absolute;top:16px;left:16px;padding:7px 14px;border-radius:999px;background:#e5197f;color:#fff;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;box-shadow:0 6px 16px rgba(0,0,0,.25);">Ristorante</span>
+          </div>
+          <div style="padding:26px;display:flex;flex-direction:column;gap:16px;flex:1;">
+            <div>
+              <h3 style="margin:0 0 8px;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;color:#2a0e1c;">New Kokus 2</h3>
+              <div style="display:flex;flex-wrap:wrap;gap:7px;">
+                <span style="padding:5px 11px;border-radius:999px;background:#fbe9da;color:#9a4a2a;font-size:12px;font-weight:600;">Pollo a la Brasa</span>
+                <span style="padding:5px 11px;border-radius:999px;background:#fbe9da;color:#9a4a2a;font-size:12px;font-weight:600;">Ceviche & Encebollado</span>
+                <span style="padding:5px 11px;border-radius:999px;background:#fbe9da;color:#9a4a2a;font-size:12px;font-weight:600;">Pranzo & Cena</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:11px;">
+              <span style="flex:0 0 auto;width:14px;height:14px;border-radius:50%;background:#1aa24f;border:3px solid #c9efd4;margin-top:3px;"></span>
+              <div style="font-size:14.5px;color:#5a3a30;line-height:1.5;"><strong style="color:#2a0e1c;">Via Giovanni Tamassia 32</strong><br>Cornelia · Metro A Cornelia</div>
+            </div>
+            <div style="margin-top:auto;display:flex;flex-wrap:wrap;gap:10px;">
+              <a href="https://www.google.com/maps/search/?api=1&query=New%20Kokus%202%20Via%20Giovanni%20Tamassia%2032%20Roma" target="_blank" style="flex:1;min-width:130px;text-align:center;padding:13px 16px;border-radius:999px;background:#2a0e1c;color:#fff;font-weight:700;font-size:14px;text-decoration:none;" style-hover="background:#e5197f;">Indicazioni</a>
+              <a href="https://wa.me/393271746854" target="_blank" style="flex:1;min-width:130px;text-align:center;padding:13px 16px;border-radius:999px;background:#1aa24f;color:#fff;font-weight:700;font-size:14px;text-decoration:none;" style-hover="background:#15c25c;">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tilt3d rv rv-d1" data-tilt-max="5" style="background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 22px 54px rgba(120,30,70,.14);border:1px solid #f3e2d6;display:flex;flex-direction:column;">
+          <div style="position:relative;">
+            <img src="assets/terrazza.jpg" alt="New Kokus 3 — La Terrazza del Kokus" style="width:100%;height:250px;object-fit:cover;display:block;">
+            <span style="position:absolute;top:16px;left:16px;padding:7px 14px;border-radius:999px;background:#e5197f;color:#fff;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;box-shadow:0 6px 16px rgba(0,0,0,.25);">Caffetteria · Terrazza</span>
+          </div>
+          <div style="padding:26px;display:flex;flex-direction:column;gap:16px;flex:1;">
+            <div>
+              <h3 style="margin:0 0 8px;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;color:#2a0e1c;">New Kokus 3 · La Terrazza</h3>
+              <div style="display:flex;flex-wrap:wrap;gap:7px;">
+                <span style="padding:5px 11px;border-radius:999px;background:#fbe9da;color:#9a4a2a;font-size:12px;font-weight:600;">Caffetteria</span>
+                <span style="padding:5px 11px;border-radius:999px;background:#fbe9da;color:#9a4a2a;font-size:12px;font-weight:600;">Aperitivi & Cocktail</span>
+                <span style="padding:5px 11px;border-radius:999px;background:#fbe9da;color:#9a4a2a;font-size:12px;font-weight:600;">Apericena</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:11px;">
+              <span style="flex:0 0 auto;width:14px;height:14px;border-radius:50%;background:#1aa24f;border:3px solid #c9efd4;margin-top:3px;"></span>
+              <div style="font-size:14.5px;color:#5a3a30;line-height:1.5;"><strong style="color:#2a0e1c;">Via Borghesiana 263a</strong><br>Metro C Borghesiana</div>
+            </div>
+            <div style="margin-top:auto;display:flex;flex-wrap:wrap;gap:10px;">
+              <a href="https://www.google.com/maps/search/?api=1&query=La%20Terrazza%20del%20Kokus%20Via%20Borghesiana%20263a%20Roma" target="_blank" style="flex:1;min-width:130px;text-align:center;padding:13px 16px;border-radius:999px;background:#2a0e1c;color:#fff;font-weight:700;font-size:14px;text-decoration:none;" style-hover="background:#e5197f;">Indicazioni</a>
+              <a href="https://instagram.com/restaurante_kokus_2" target="_blank" style="flex:1;min-width:130px;text-align:center;padding:13px 16px;border-radius:999px;background:#e5197f;color:#fff;font-weight:700;font-size:14px;text-decoration:none;" style-hover="background:#c50f6a;">Instagram</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="arrivo" style="padding:clamp(62px,9vw,110px) 0 clamp(44px,6vw,72px);background:radial-gradient(2px 2px at 22% 12%,rgba(255,255,255,.5),transparent),radial-gradient(1.5px 1.5px at 78% 8%,rgba(255,255,255,.45),transparent),radial-gradient(2px 2px at 52% 18%,rgba(255,255,255,.4),transparent),linear-gradient(180deg,#2b0d1f 0%,#190720 55%,#1f0a16 100%);position:relative;overflow:hidden;color:#fff;">
+    <div class="rv" style="text-align:center;margin-bottom:20px;padding:0 20px;position:relative;z-index:3;">
+      <div style="display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#ffce5a;margin-bottom:16px;"><span style="width:26px;height:2px;background:#ffce5a;"></span>Come arrivare · Cómo llegar<span style="width:26px;height:2px;background:#ffce5a;"></span></div>
+      <h2 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(30px,4.8vw,54px);line-height:1;letter-spacing:-1px;color:#fff;">Dalla Metro Cornelia <span style="color:#ffce5a;">a casa Kokus</span> in 3D</h2>
+      <p style="margin:14px auto 0;max-width:560px;font-size:16px;line-height:1.6;color:#e9c9d8;">Cammina con noi foto per foto: premi <strong style="color:#ffce5a;">▶ Guarda il percorso</strong> e la telecamera ti porta fino alla porta del New Kokus 2. Sono ~6 minuti a piedi.</p>
+    </div>
+
+    <div ref="{{ arrSceneRef }}" style="position:relative;height:min(66vh,600px);perspective:950px;perspective-origin:50% 44%;">
+      <div style="{{ arrWorld }}">
+        <div style="position:absolute;inset:0;transform-style:preserve-3d;animation:arrSway 14s ease-in-out infinite alternate;">
+
+          <sc-for list="{{ arrDeco }}" as="dz" hint-placeholder-count="8">
+            <div style="{{ dz.style }}"><span style="{{ dz.inner }}"></span>{{ dz.txt }}</div>
+          </sc-for>
+
+          <sc-for list="{{ arrPanels }}" as="p" hint-placeholder-count="4">
+            <div style="{{ p.wrap }}">
+              <div role="img" aria-label="{{ p.title }}" style="{{ p.frame }}"></div>
+              <div style="display:flex;align-items:flex-start;gap:12px;margin-top:14px;text-align:left;">
+                <span style="flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:linear-gradient(180deg,#f12b91,#d10f74);display:grid;place-items:center;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:15px;color:#fff;border:2px solid #ffd76a;box-shadow:0 6px 16px rgba(0,0,0,.4);">{{ p.num }}</span>
+                <div style="background:rgba(20,4,14,.55);border-radius:12px;padding:8px 14px;backdrop-filter:blur(4px);">
+                  <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:18px;color:#fff;">{{ p.title }}</div>
+                  <div style="font-size:13.5px;color:#e9c9d8;line-height:1.45;margin-top:2px;">{{ p.desc }}</div>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+
+        </div>
+      </div>
+
+      <div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 90% at 50% 42%,transparent 52%,rgba(15,3,12,.6) 100%);"></div>
+    </div>
+
+    <div style="position:relative;z-index:3;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;margin-top:18px;padding:0 20px;">
+      <button type="button" onClick="{{ arrPrev }}" style="width:46px;height:46px;border-radius:50%;border:1.5px solid rgba(255,255,255,.4);background:rgba(255,255,255,.08);color:#fff;font-size:19px;font-weight:800;cursor:pointer;font-family:inherit;" style-hover="background:rgba(255,255,255,.2);">←</button>
+      <button type="button" onClick="{{ arrPlay }}" style="padding:14px 26px;border-radius:999px;border:none;background:linear-gradient(180deg,#f12b91,#d10f74);color:#fff;font-weight:800;font-size:15px;cursor:pointer;font-family:inherit;box-shadow:0 12px 30px rgba(209,15,116,.45);" style-hover="transform:translateY(-2px);box-shadow:0 16px 38px rgba(209,15,116,.6);">{{ arrPlayLabel }}</button>
+      <button type="button" onClick="{{ arrNext }}" style="width:46px;height:46px;border-radius:50%;border:1.5px solid rgba(255,255,255,.4);background:rgba(255,255,255,.08);color:#fff;font-size:19px;font-weight:800;cursor:pointer;font-family:inherit;" style-hover="background:rgba(255,255,255,.2);">→</button>
+    </div>
+    <div style="position:relative;z-index:3;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:14px;padding:0 20px;">
+      <sc-for list="{{ arrDots }}" as="d" hint-placeholder-count="9">
+        <button type="button" onClick="{{ d.go }}" style="{{ d.style }}">{{ d.n }}</button>
+      </sc-for>
+    </div>
+
+    <div style="position:relative;z-index:3;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;margin-top:26px;padding:0 20px;text-align:center;">
+      <span style="padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.08);font-size:13.5px;font-weight:600;color:#ffce7a;">🚇 Metro A Cornelia → 🌴 Via Giovanni Tamassia 32 · ~6 min a piedi</span>
+      <a href="https://www.google.com/maps/dir/?api=1&origin=Metro%20Cornelia%20Roma&destination=Via%20Giovanni%20Tamassia%2032%20Roma&travelmode=walking" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;background:#1aa24f;color:#fff;font-weight:700;font-size:14px;text-decoration:none;box-shadow:0 10px 26px rgba(26,162,79,.4);" style-hover="background:#15c25c;transform:translateY(-2px);">🧭 Apri il navigatore</a>
+      <span style="flex-basis:100%;height:0;"></span>
+      <span style="font-size:13px;color:#b89aa6;">Per <strong style="color:#ff7fb8;">La Terrazza del Kokus</strong>: Metro C Borghesiana → Via Borghesiana 263a ·</span>
+      <a href="https://www.google.com/maps/dir/?api=1&origin=Metro%20Borghesiana%20Roma&destination=Via%20Borghesiana%20263a%20Roma&travelmode=walking" target="_blank" style="color:#ffce7a;font-weight:700;font-size:13px;text-decoration:underline;" style-hover="color:#ffe6a0;">indicazioni →</a>
+    </div>
+  </section>
+
+  <section id="galleria" style="padding:clamp(62px,9vw,116px) clamp(20px,5vw,72px);background:#1f0a16 radial-gradient(1.5px 1.5px at 12% 18%,rgba(255,255,255,.35),transparent);">
+    <div style="max-width:1180px;margin:0 auto;">
+      <div class="rv" style="text-align:center;margin-bottom:44px;">
+        <div style="display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#ff7fb8;margin-bottom:16px;"><span style="width:26px;height:2px;background:#ff7fb8;"></span>Galleria · La fiesta<span style="width:26px;height:2px;background:#ff7fb8;"></span></div>
+        <h2 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(32px,5vw,56px);line-height:1;letter-spacing:-1px;color:#fff;">Brace, sabor y <span style="color:#ffce5a;">fiesta</span></h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));grid-auto-rows:200px;grid-auto-flow:dense;gap:14px;">
+        <div class="tilt3d rv" data-tilt-max="8" style="grid-row:span 2;border-radius:16px;overflow:hidden;"><img src="assets/interior.jpg" alt="La sala del New Kokus" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;" style-hover="transform:scale(1.06);"></div>
+        <div class="tilt3d rv rv-d1" data-tilt-max="8" style="border-radius:16px;overflow:hidden;"><img src="assets/arepas.jpg" alt="Arepas fatte in casa" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;" style-hover="transform:scale(1.06);"></div>
+        <div class="tilt3d rv rv-d2" data-tilt-max="8" style="border-radius:16px;overflow:hidden;"><img src="assets/desayunos.jpg" alt="Desayunos latinos" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;" style-hover="transform:scale(1.06);"></div>
+        <div class="tilt3d rv" data-tilt-max="6" style="grid-row:span 2;border-radius:16px;background:linear-gradient(165deg,#e5197f,#8a0c4e);padding:26px;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;">
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:25px;color:#ffd76a;">¡Feliz cumpleaños!</div>
+          <h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;color:#fff;line-height:1.05;">Eventi & feste private</h3>
+          <p style="margin:0;font-size:14px;line-height:1.55;color:rgba(255,255,255,.88);">Compleanni, battesimi, serate con musica latina e partite in diretta. Organizziamo tutto noi.</p>
+          <a href="https://wa.me/393271746854?text=Ciao%20New%20Kokus!%20Vorrei%20organizzare%20una%20festa%20privata" target="_blank" style="display:inline-flex;align-items:center;gap:8px;align-self:flex-start;padding:12px 20px;border-radius:999px;background:#fff;color:#c50f6a;font-weight:800;font-size:14px;text-decoration:none;box-shadow:0 10px 24px rgba(0,0,0,.25);" style-hover="transform:translateY(-2px);">Organizza la tua festa →</a>
+        </div>
+        <div class="tilt3d rv" data-tilt-max="8" style="border-radius:16px;overflow:hidden;"><img src="assets/menudia.jpg" alt="Menù del día" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;" style-hover="transform:scale(1.06);"></div>
+        <div class="tilt3d rv rv-d1" data-tilt-max="8" style="border-radius:16px;overflow:hidden;"><img src="assets/storefront-night.jpg" alt="Il New Kokus di sera" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;" style-hover="transform:scale(1.06);"></div>
+        <div class="tilt3d rv rv-d2" data-tilt-max="8" style="border-radius:16px;overflow:hidden;"><img src="assets/terrazza.jpg" alt="La Terrazza del Kokus" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;" style-hover="transform:scale(1.06);"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prenota" style="padding:clamp(60px,8vw,108px) clamp(20px,5vw,72px);background:linear-gradient(180deg,#fbe9da,#fff4ea);">
+    <div class="rv" style="max-width:660px;margin:0 auto;text-align:center;">
+      <div style="display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#d10f74;margin-bottom:16px;"><span style="width:26px;height:2px;background:#d10f74;"></span>Prenotazioni · Reservas<span style="width:26px;height:2px;background:#d10f74;"></span></div>
+      <h2 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(30px,4.8vw,54px);line-height:1;letter-spacing:-1px;color:#2a0e1c;">Prenota un <span style="color:#e5197f;">tavolo</span></h2>
+      <p style="margin:14px auto 0;max-width:520px;font-size:16px;line-height:1.6;color:#7a5648;">Compila e invia: la richiesta arriva subito sul nostro <strong style="color:#1aa24f;">WhatsApp</strong> e ti confermiamo noi. <span style="font-family:'Caveat',cursive;font-weight:700;font-size:20px;color:#1aa24f;">¡Te esperamos!</span></p>
+    </div>
+    <form id="kokus-book-form" class="rv rv-d1" style="max-width:660px;margin:30px auto 0;background:#fff;border-radius:22px;box-shadow:0 26px 60px rgba(120,30,70,.16);border:1px solid #f3e2d6;overflow:hidden;">
+      <div style="background:linear-gradient(90deg,#e5197f,#c50f6a);padding:15px 26px;display:flex;align-items:center;gap:11px;">
+        <span style="display:grid;place-items:center;width:42px;height:31px;border-radius:50%;background:radial-gradient(circle at 50% 26%,#ff9326,#e5197f 72%);border:2px solid #ffd76a;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:12px;color:#fff;">MB</span>
+        <div style="color:#fff;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:16px;">Richiesta di prenotazione</div>
+      </div>
+      <div style="padding:26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">
+        <label style="display:flex;flex-direction:column;gap:6px;text-align:left;grid-column:1/-1;"><span style="font-size:11.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#9a4a2a;">Nome e cognome</span><input name="nome" type="text" required placeholder="Mario Rossi" style="width:100%;padding:13px 15px;border-radius:11px;border:1.5px solid #f0d8c8;background:#fffdfb;font-family:inherit;font-size:15px;color:#2a0e1c;outline:none;" style-focus="border-color:#e5197f;box-shadow:0 0 0 3px rgba(229,25,127,.12);"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;text-align:left;"><span style="font-size:11.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#9a4a2a;">Telefono</span><input name="tel" type="tel" required placeholder="333 000 0000" style="width:100%;padding:13px 15px;border-radius:11px;border:1.5px solid #f0d8c8;background:#fffdfb;font-family:inherit;font-size:15px;color:#2a0e1c;outline:none;" style-focus="border-color:#e5197f;box-shadow:0 0 0 3px rgba(229,25,127,.12);"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;text-align:left;"><span style="font-size:11.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#9a4a2a;">Persone</span><select name="persone" required style="width:100%;padding:13px 15px;border-radius:11px;border:1.5px solid #f0d8c8;background:#fffdfb;font-family:inherit;font-size:15px;color:#2a0e1c;outline:none;" style-focus="border-color:#e5197f;box-shadow:0 0 0 3px rgba(229,25,127,.12);"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9+</option></select></label>
+        <label style="display:flex;flex-direction:column;gap:6px;text-align:left;"><span style="font-size:11.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#9a4a2a;">Data</span><input name="data" type="date" required style="width:100%;padding:13px 15px;border-radius:11px;border:1.5px solid #f0d8c8;background:#fffdfb;font-family:inherit;font-size:15px;color:#2a0e1c;outline:none;" style-focus="border-color:#e5197f;box-shadow:0 0 0 3px rgba(229,25,127,.12);"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;text-align:left;"><span style="font-size:11.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#9a4a2a;">Ora</span><input name="ora" type="time" required style="width:100%;padding:13px 15px;border-radius:11px;border:1.5px solid #f0d8c8;background:#fffdfb;font-family:inherit;font-size:15px;color:#2a0e1c;outline:none;" style-focus="border-color:#e5197f;box-shadow:0 0 0 3px rgba(229,25,127,.12);"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;text-align:left;grid-column:1/-1;"><span style="font-size:11.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#9a4a2a;">Locale</span><select name="locale" required style="width:100%;padding:13px 15px;border-radius:11px;border:1.5px solid #f0d8c8;background:#fffdfb;font-family:inherit;font-size:15px;color:#2a0e1c;outline:none;" style-focus="border-color:#e5197f;box-shadow:0 0 0 3px rgba(229,25,127,.12);"><option>New Kokus 2 — Cornelia (Via Giovanni Tamassia 32)</option><option>La Terrazza del Kokus — Borghesiana (Via Borghesiana 263a)</option></select></label>
+        <button type="submit" style="grid-column:1/-1;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:16px;border:none;border-radius:999px;background:#1aa24f;color:#fff;font-weight:700;font-size:16px;cursor:pointer;box-shadow:0 14px 32px rgba(26,162,79,.35);font-family:inherit;transition:transform .25s ease,background .25s ease;" style-hover="background:#15c25c;transform:translateY(-2px);">Invia richiesta su WhatsApp →</button>
+        <p style="grid-column:1/-1;margin:2px 0 0;text-align:center;font-size:12px;color:#a07f70;">Si aprirà WhatsApp con il messaggio già pronto. La prenotazione è confermata dalla nostra risposta.</p>
+      </div>
+    </form>
+  </section>
+
+  <section id="contatti" style="background:#1f0a16 linear-gradient(180deg,rgba(229,25,127,.06),transparent 40%);color:#fff;padding:clamp(60px,8vw,104px) clamp(20px,5vw,72px) 0;">
+    <div style="max-width:1180px;margin:0 auto;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:40px 36px;padding-bottom:56px;border-bottom:1px solid rgba(255,255,255,.12);">
+        <div class="rv" style="grid-column:1/-1;max-width:560px;">
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:26px;color:#ffce7a;">¡Te esperamos!</div>
+          <h2 style="margin:4px 0 0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(30px,4.6vw,52px);line-height:1.02;letter-spacing:-.8px;">Vieni a trovarci al Kokus</h2>
+        </div>
+        <div class="rv">
+          <div style="font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#ff7fb8;margin-bottom:14px;">Orari</div>
+          <div style="font-size:15px;line-height:1.7;color:#e9d4dd;">Aperti tutti i giorni<br><strong style="color:#fff;">Martedì riposo</strong><br><span style="color:#b89aa6;font-size:13.5px;">Pranzo 12:00–15:30 · Cena 18:30–23:30</span></div>
+          <div style="display:flex;gap:8px;margin-top:16px;">
+            <span style="padding:6px 12px;border-radius:8px;background:rgba(255,255,255,.08);font-size:12px;font-weight:600;color:#ffce7a;">Uber Eats</span>
+            <span style="padding:6px 12px;border-radius:8px;background:rgba(255,255,255,.08);font-size:12px;font-weight:600;color:#ffce7a;">Just Eat</span>
+          </div>
+        </div>
+        <div class="rv rv-d1">
+          <div style="font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#ff7fb8;margin-bottom:14px;">Telefono</div>
+          <div style="display:flex;flex-direction:column;gap:9px;">
+            <a href="tel:+393271746854" style="color:#fff;text-decoration:none;font-size:16px;font-weight:600;" style-hover="color:#ffce7a;">327 174 6854</a>
+            <a href="tel:+393387653763" style="color:#fff;text-decoration:none;font-size:16px;font-weight:600;" style-hover="color:#ffce7a;">338 765 3763</a>
+            <a href="tel:+393247839269" style="color:#fff;text-decoration:none;font-size:16px;font-weight:600;" style-hover="color:#ffce7a;">324 783 9269</a>
+          </div>
+        </div>
+        <div class="rv rv-d2">
+          <div style="font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#ff7fb8;margin-bottom:14px;">Social & ordini</div>
+          <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:18px;">
+            <a href="https://instagram.com/restaurante_kokus_2" target="_blank" style="color:#fff;text-decoration:none;font-size:15px;font-weight:600;" style-hover="color:#ffce7a;">@restaurante_kokus_2</a>
+            <a href="https://instagram.com/fast_food_new_kokus_2" target="_blank" style="color:#fff;text-decoration:none;font-size:15px;font-weight:600;" style-hover="color:#ffce7a;">@fast_food_new_kokus_2</a>
+          </div>
+          <a href="https://wa.me/393271746854?text=Ciao%20New%20Kokus!" target="_blank" style="display:inline-flex;align-items:center;gap:9px;padding:14px 24px;border-radius:999px;background:#1aa24f;color:#fff;font-weight:700;font-size:15px;text-decoration:none;box-shadow:0 12px 28px rgba(26,162,79,.4);" style-hover="background:#15c25c;">Scrivici su WhatsApp</a>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding:30px 0 36px;">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <span style="display:grid;place-items:center;width:48px;height:35px;border-radius:50%;background:radial-gradient(circle at 50% 26%,#ff9326,#e5197f 72%);border:2px solid #ffd76a;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:14px;color:#fff;">MB</span>
+          <div style="line-height:1.2;"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:18px;">NEW KOKUS</div><div style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#ffce7a;">Cucina Latinoamericana · Roma</div></div>
+        </div>
+        <div style="font-family:'Caveat',cursive;font-weight:700;font-size:22px;color:#ff7fb8;">Para la gente del Kokus 🌴</div>
+        <div style="font-size:12px;color:#9a7a86;">© 2026 New Kokus · Cornelia & Borghesiana, Roma</div>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/393271746854?text=Ciao%20New%20Kokus!" target="_blank" style="position:fixed;right:18px;bottom:18px;z-index:55;display:inline-flex;align-items:center;gap:9px;padding:14px 22px;border-radius:999px;background:linear-gradient(180deg,#22c15e,#149a4a);color:#fff;font-weight:800;font-size:15px;text-decoration:none;box-shadow:0 14px 34px rgba(0,0,0,.3);animation:pulse 2.6s ease-out 4s infinite;transition:transform .25s ease;" style-hover="transform:translateY(-3px) scale(1.04);">💬 WhatsApp</a>
+
+  <!--SECTIONS-->
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;comboPrezzo&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;55€&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Offerta Combo&quot;}, &quot;mostraCombo&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Offerta Combo&quot;}}">
+class Component extends DCLogic {
+  constructor(props){
+    super(props);
+    this.scene = React.createRef();
+    this.fg = React.createRef();
+    this.hdr = React.createRef();
+    this.bar = React.createRef();
+    this.arrScene = React.createRef();
+    this.onMove = this.onMove.bind(this);
+    this.onScroll = this.onScroll.bind(this);
+    this.onOrient = this.onOrient.bind(this);
+    this.onTiltMove = this.onTiltMove.bind(this);
+    this.onDocLeave = this.onDocLeave.bind(this);
+    this._tiltEl = null;
+    this._io = null;
+    this._arrTimer = null;
+    this.flies = this.makeFlies();
+    this.state = { editing: false, menu: this.loadMenu(), arrStep: 0, arrPlaying: false };
+  }
+  arrData(){
+    return [
+      { img:'assets/percorso-1.png', title:'Metro A — Cornelia', desc:'Scendi alla fermata Cornelia ed esci su Circonvallazione Cornelia.' },
+      { img:'assets/percorso-2.png', title:'Circonvallazione Cornelia', desc:'Attraversa al semaforo sulle strisce e vai verso Via di Boccea.' },
+      { img:'assets/percorso-3.png', title:'Via di Boccea', desc:'Prosegui dritto sul marciapiede dei negozi (Intersport e Cisalfa).' },
+      { img:'assets/percorso-4.png', title:'Via di Boccea · angolo Kiko', desc:'All\'incrocio attraversa e continua dritto ancora un isolato.' },
+      { img:'assets/percorso-5.png', title:'Via Federico Galeotti', desc:'Gira in Via Federico Galeotti e prosegui dritto.' },
+      { img:'assets/percorso-6.png', title:'Via Federico Galeotti 26', desc:'Continua lungo la via: mancano pochi passi.' },
+      { img:'assets/percorso-7.png', title:'Angolo Via G. Tamassia', desc:'All\'angolo gira in Via Giovanni Tamassia.' },
+      { img:'assets/percorso-8.png', title:'Via Giovanni Tamassia', desc:'Ci sei quasi: il locale è pochi metri più avanti.' },
+      { img:'assets/percorso-9.png', title:'🌴 New Kokus 2 — Sei arrivato!', desc:'Via Giovanni Tamassia 32 · ¡Bienvenidos a casa!' }
+    ];
+  }
+  arrStop = () => {
+    if (this._arrTimer){ clearInterval(this._arrTimer); this._arrTimer = null; }
+    if (this.state.arrPlaying) this.setState({ arrPlaying: false });
+  };
+  arrGo = (i) => {
+    this.arrStop();
+    const last = this.arrData().length - 1;
+    this.setState({ arrStep: Math.max(0, Math.min(last, i)) });
+  };
+  arrNext = () => this.arrGo(this.state.arrStep + 1);
+  arrPrev = () => this.arrGo(this.state.arrStep - 1);
+  arrPlay = () => {
+    if (this.state.arrPlaying) return this.arrStop();
+    const last = this.arrData().length - 1;
+    this.setState({ arrStep: 0, arrPlaying: true });
+    this._arrTimer = setInterval(() => {
+      if (this.state.arrStep >= last) { this.arrStop(); return; }
+      this.setState({ arrStep: this.state.arrStep + 1 });
+    }, 2300);
+  };
+  makeFlies(){
+    const cols = ['#ffd76a','#9bf2b0','#ff7fb8','#ffe6a0'];
+    const out = [];
+    for (let i = 0; i < 14; i++){
+      const z = -320 - ((i * 137) % 1600);
+      const left = 6 + ((i * 61) % 88);
+      const top = 26 + ((i * 37) % 44);
+      const s = 3 + (i % 4);
+      const c = cols[i % 4];
+      out.push({
+        wrap: { position:'absolute', left:left + '%', top:top + '%', transform:'translateZ(' + z + 'px)', pointerEvents:'none' },
+        dot: { display:'block', width:s + 'px', height:s + 'px', borderRadius:'50%', background:c, boxShadow:'0 0 ' + (s * 3) + 'px ' + c, animation:'fly ' + (6 + (i % 5)) + 's ease-in-out ' + ((i * 0.7) % 5).toFixed(1) + 's infinite' }
+      });
+    }
+    return out;
+  }
+  defaultMenu(){
+    return [
+      { title:'Entradas', sub:'antipasti', items:[
+        { n:'Ceviche', d:'Pesce marinato al limón, cipolla rossa, mais', p:'12€' },
+        { n:'Encebollado ecuatoriano', d:'Zuppa di pesce, yuca, cipolla croccante', p:'10€' },
+        { n:'Leche de Tigre', d:'Il cuore del ceviche, da bere', p:'8€' },
+        { n:'Salchipapa', d:'Patatine, salsiccia e salse della casa', p:'7€' } ] },
+      { title:'Segundos', sub:'piatti', items:[
+        { n:'Lomo Saltado', d:'Manzo saltato, cipolla, pomodoro, patatine, riso', p:'12€' },
+        { n:'Seco de Pollo', d:'Pollo brasato al coriandolo con riso', p:'11€' },
+        { n:'Arroz Chaufa', d:'Riso saltato latino-cantonese con pollo', p:'10€' },
+        { n:'Pabellón Criollo', d:'Manzo sfilacciato, fagioli, platano, riso', p:'12€' } ] },
+      { title:'De la casa', sub:'la brace', items:[
+        { n:'Pollo a la Brasa ¼', d:'Alla brace con leña y carbón, patatine', p:'9€' },
+        { n:'Pollo a la Brasa ½', d:'Con patatine e insalata', p:'15€' },
+        { n:'Anticuchos', d:'Spiedini marinati alla griglia', p:'9€' },
+        { n:'Parrillada latina', d:'Mix di carni alla brace (per 2)', p:'28€' } ] },
+      { title:'Arepas', sub:'& cachapas', items:[
+        { n:'Reina Pepiada', d:'Pollo, avocado, maionese', p:'8€' },
+        { n:'Arepa Pabellón', d:'Manzo, fagioli, platano, formaggio', p:'9€' },
+        { n:'Arepa Carne · Pollo · Queso', d:'A scelta, anche mixta', p:'7€' },
+        { n:'Cachapa', d:'Frittella di mais dolce con formaggio', p:'8€' } ] }
+    ];
+  }
+  loadMenu(){
+    try {
+      const s = localStorage.getItem('kokus-menu-v2');
+      if (s) { const m = JSON.parse(s); if (Array.isArray(m) && m.length) return m; }
+    } catch(err) {}
+    return this.defaultMenu();
+  }
+  saveMenu(menu){
+    this.setState({ menu });
+    try { localStorage.setItem('kokus-menu-v2', JSON.stringify(menu)); } catch(err) {}
+  }
+  cloneMenu(){
+    return this.state.menu.map(c => ({ title: c.title, sub: c.sub, items: c.items.map(i => ({ n: i.n, d: i.d, p: i.p })) }));
+  }
+  updCat(ci, k, v){ const m = this.cloneMenu(); m[ci][k] = v; this.saveMenu(m); }
+  updItem(ci, ii, k, v){ const m = this.cloneMenu(); m[ci].items[ii][k] = v; this.saveMenu(m); }
+  rmCat(ci){ const m = this.cloneMenu(); m.splice(ci, 1); this.saveMenu(m); }
+  rmItem(ci, ii){ const m = this.cloneMenu(); m[ci].items.splice(ii, 1); this.saveMenu(m); }
+  addCat(){ const m = this.cloneMenu(); m.push({ title:'Nuova categoria', sub:'', items:[{ n:'Nuovo piatto', d:'Descrizione', p:'0€' }] }); this.saveMenu(m); }
+  addItem(ci){ const m = this.cloneMenu(); m[ci].items.push({ n:'Nuovo piatto', d:'Descrizione', p:'0€' }); this.saveMenu(m); }
+  componentDidMount(){
+    window.addEventListener('mousemove', this.onMove, {passive:true});
+    window.addEventListener('scroll', this.onScroll, {passive:true});
+    window.addEventListener('deviceorientation', this.onOrient, {passive:true});
+    if (window.matchMedia && matchMedia('(hover:hover) and (pointer:fine)').matches){
+      document.addEventListener('mousemove', this.onTiltMove, {passive:true});
+      document.documentElement.addEventListener('mouseleave', this.onDocLeave);
+    }
+    if ('IntersectionObserver' in window){
+      this._io = new IntersectionObserver((entries) => {
+        for (const en of entries){
+          if (en.isIntersecting){ en.target.classList.add('rv-in'); this._io.unobserve(en.target); }
+        }
+      }, { threshold: .12, rootMargin: '0px 0px -36px 0px' });
+    }
+    this.observeReveals();
+    this.onScroll();
+    const f = document.getElementById('kokus-book-form');
+    if (f) f.addEventListener('submit', this.book);
+  }
+  componentDidUpdate(){ this.observeReveals(); }
+  observeReveals(){
+    const els = document.querySelectorAll('.rv:not([data-rv-seen])');
+    els.forEach(el => {
+      el.setAttribute('data-rv-seen', '1');
+      if (this._io) this._io.observe(el);
+      else el.classList.add('rv-in');
+    });
+  }
+  componentWillUnmount(){
+    window.removeEventListener('mousemove', this.onMove);
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('deviceorientation', this.onOrient);
+    document.removeEventListener('mousemove', this.onTiltMove);
+    document.documentElement.removeEventListener('mouseleave', this.onDocLeave);
+    if (this._io) this._io.disconnect();
+    if (this._arrTimer) clearInterval(this._arrTimer);
+  }
+  book = (e) => {
+    e.preventDefault();
+    const f = e.currentTarget;
+    const g = (n) => ((f.elements[n] && f.elements[n].value) || '').trim();
+    const parts = [
+      'Ciao New Kokus! Vorrei prenotare un tavolo:', '',
+      'Nome: ' + (g('nome') || '-'),
+      'Persone: ' + (g('persone') || '-'),
+      'Data: ' + (g('data') || '-') + ' alle ' + (g('ora') || '-'),
+      'Locale: ' + (g('locale') || '-'),
+      'Telefono: ' + (g('tel') || '-')
+    ];
+    window.open('https://wa.me/393271746854?text=' + encodeURIComponent(parts.join('\n')), '_blank');
+  };
+  onScroll(){
+    const h = document.documentElement;
+    const max = h.scrollHeight - h.clientHeight;
+    const y = h.scrollTop || window.scrollY || 0;
+    if (this.bar.current) this.bar.current.style.width = (max > 0 ? (y / max * 100) : 0).toFixed(2) + '%';
+    if (this.hdr.current){
+      const on = y > 46;
+      const st = this.hdr.current.style;
+      st.background = on ? 'rgba(18,4,12,.9)' : 'linear-gradient(180deg,rgba(18,4,12,.62),rgba(18,4,12,0))';
+      st.backdropFilter = on ? 'blur(14px)' : 'none';
+      st.webkitBackdropFilter = st.backdropFilter;
+      st.boxShadow = on ? '0 12px 34px rgba(0,0,0,.4)' : 'none';
+    }
+  }
+  applyParallax(dx, dy){
+    if (this.scene.current) this.scene.current.style.perspectiveOrigin = (50 - dx*9).toFixed(2) + '% ' + (45 - dy*7).toFixed(2) + '%';
+    if (this.fg.current) this.fg.current.style.transform = 'translate(' + (-dx*34).toFixed(1) + 'px,' + (-dy*20).toFixed(1) + 'px)';
+    if (this.arrScene.current) this.arrScene.current.style.perspectiveOrigin = (50 - dx*8).toFixed(2) + '% ' + (44 - dy*6).toFixed(2) + '%';
+  }
+  onMove(e){
+    this.applyParallax(e.clientX / window.innerWidth - 0.5, e.clientY / window.innerHeight - 0.5);
+  }
+  onOrient(e){
+    if (e.gamma == null || e.beta == null) return;
+    const dx = Math.max(-0.5, Math.min(0.5, e.gamma / 60));
+    const dy = Math.max(-0.5, Math.min(0.5, (e.beta - 42) / 70));
+    this.applyParallax(dx, dy);
+  }
+  onTiltMove(e){
+    const el = e.target && e.target.closest ? e.target.closest('.tilt3d') : null;
+    if (this._tiltEl && this._tiltEl !== el){ this._tiltEl.style.transform = ''; this._tiltEl = null; }
+    if (!el) return;
+    this._tiltEl = el;
+    const r = el.getBoundingClientRect();
+    if (!r.width || !r.height) return;
+    const px = (e.clientX - r.left) / r.width - 0.5;
+    const py = (e.clientY - r.top) / r.height - 0.5;
+    const max = parseFloat(el.getAttribute('data-tilt-max')) || 7;
+    el.style.transform = 'perspective(950px) rotateX(' + (-py*max).toFixed(2) + 'deg) rotateY(' + (px*max).toFixed(2) + 'deg) translateZ(8px)';
+    el.style.setProperty('--mx', ((px + 0.5) * 100).toFixed(1) + '%');
+    el.style.setProperty('--my', ((py + 0.5) * 100).toFixed(1) + '%');
+  }
+  onDocLeave(){
+    if (this._tiltEl){ this._tiltEl.style.transform = ''; this._tiltEl = null; }
+  }
+  renderVals(){
+    const Z = [-2620, -2300, -1980, -1660, -1340, -1020];
+    const hues = ['rgba(255,207,138,.92)','rgba(255,150,198,.85)','rgba(255,241,214,.92)','rgba(190,232,154,.85)','rgba(255,207,138,.9)','rgba(255,170,120,.85)'];
+    const buildings = [];
+    [-1, 1].forEach(side => {
+      Z.forEach((z, i) => {
+        buildings.push({ style: {
+          position:'absolute', left:'50%', top:'52%',
+          width:(240 + i*6) + 'px', height:(430 + i*36) + 'px',
+          transform:'translate(-50%,-50%) translateX(' + (side*(515 + i*6)) + 'px) translateZ(' + z + 'px)',
+          backgroundImage:'radial-gradient(circle, ' + hues[i] + ' 1.3px, transparent 2.3px), linear-gradient(180deg,#2c1422,#140a12)',
+          backgroundSize:'22px 30px, 100% 100%',
+          backgroundPosition:'7px 9px, 0 0',
+          borderRadius:'5px 5px 0 0',
+          boxShadow:'inset 0 -80px 70px rgba(0,0,0,.7)',
+          outline:'1px solid rgba(0,0,0,.4)'
+        }});
+      });
+    });
+    const editing = !!this.state.editing;
+    const cats = (this.state.menu || []).map((c, ci) => ({
+      title: c.title, sub: c.sub, view: !editing, edit: editing,
+      onTitle: (e) => this.updCat(ci, 'title', e.target.value),
+      onSub: (e) => this.updCat(ci, 'sub', e.target.value),
+      removeCat: () => this.rmCat(ci),
+      addItem: () => this.addItem(ci),
+      items: (c.items || []).map((it, ii) => ({
+        n: it.n, d: it.d, p: it.p,
+        onN: (e) => this.updItem(ci, ii, 'n', e.target.value),
+        onD: (e) => this.updItem(ci, ii, 'd', e.target.value),
+        onP: (e) => this.updItem(ci, ii, 'p', e.target.value),
+        rm: () => this.rmItem(ci, ii)
+      }))
+    }));
+    const ARR_STEP_Z = 780;
+    const arrStep = this.state.arrStep || 0;
+    const arrData = this.arrData();
+    const arrLast = arrData.length - 1;
+    const arrWorld = {
+      position:'absolute', inset:'0', transformStyle:'preserve-3d',
+      transform:'translateZ(' + (arrStep * ARR_STEP_Z) + 'px)',
+      transition:'transform 1.15s cubic-bezier(.22,.61,.36,1)'
+    };
+    const arrPanels = arrData.map((s, i) => {
+      const rel = i - arrStep;
+      const isLast = i === arrLast;
+      return {
+        num: i + 1, title: s.title, desc: s.desc, img: s.img,
+        wrap: {
+          position:'absolute', left:'50%', top:'44%', width:'min(620px,86vw)',
+          transform:'translate(-50%,-50%) translateX(calc(var(--arrx,56px) * ' + (i % 2 ? 1 : -1) + ')) translateZ(' + (-i * ARR_STEP_Z) + 'px) rotateY(' + (i % 2 ? -5 : 5) + 'deg)',
+          opacity: rel < 0 ? 0 : Math.max(0, 1 - rel * 0.16),
+          transition:'opacity .55s ease', pointerEvents:'none'
+        },
+        frame: {
+          height:'clamp(200px,36vw,330px)', borderRadius:'14px', overflow:'hidden',
+          backgroundColor:'#20101c',
+          backgroundImage:'url(' + s.img + ')',
+          backgroundSize:'cover', backgroundPosition:'center',
+          border: isLast ? '5px solid #ffd76a' : '5px solid #fff',
+          boxShadow: isLast ? '0 0 60px rgba(229,25,127,.7), 0 30px 70px rgba(0,0,0,.55)' : '0 30px 70px rgba(0,0,0,.55)',
+          animation:'arrFloat ' + (4 + (i % 3)) + 's ease-in-out ' + ((i * 0.45) % 2).toFixed(2) + 's infinite'
+        }
+      };
+    });
+    const arrDeco = [];
+    const ringCols = [
+      ['rgba(255,110,180,.5)','rgba(229,25,127,.32)'],
+      ['rgba(255,215,106,.5)','rgba(244,168,44,.3)'],
+      ['rgba(155,242,176,.45)','rgba(26,162,79,.3)']
+    ];
+    for (let i = 0; i < arrData.length; i++){
+      const rc = ringCols[i % 3];
+      arrDeco.push({ txt:'', inner:{ display:'none' }, style:{
+        position:'absolute', left:'50%', top:'44%', width:'920px', height:'580px',
+        transform:'translate(-50%,-50%) translateZ(' + (-(i * ARR_STEP_Z) - 390) + 'px)',
+        borderRadius:'50%', border:'2.5px solid ' + rc[0],
+        boxShadow:'0 0 40px ' + rc[1] + ', inset 0 0 40px ' + rc[1],
+        animation:'ringPulse ' + (3 + (i % 3)) + 's ease-in-out ' + (i * 0.4) + 's infinite',
+        pointerEvents:'none'
+      }});
+    }
+    const orbCols = ['#ffd76a','#9bf2b0','#ff7fb8','#ffe6a0'];
+    for (let i = 0; i < 26; i++){
+      const c = orbCols[i % 4];
+      const s2 = 4 + (i % 5);
+      arrDeco.push({ txt:'', style:{
+        position:'absolute', left: (5 + (i * 67) % 90) + '%', top: (16 + (i * 41) % 62) + '%',
+        transform:'translateZ(' + (-((i * 293) % 6600)) + 'px)', pointerEvents:'none'
+      }, inner:{
+        display:'block', width: s2 + 'px', height: s2 + 'px', borderRadius:'50%',
+        background: c, boxShadow:'0 0 ' + (s2 * 3.5) + 'px ' + c,
+        animation:'fly ' + (5 + (i % 6)) + 's ease-in-out ' + ((i * 0.6) % 4).toFixed(1) + 's infinite'
+      }});
+    }
+    for (let i = 0; i < 6; i++){
+      arrDeco.push({ txt:'🌴', inner:{ display:'none' }, style:{
+        position:'absolute', left: (i % 2 ? 82 + (i * 2) : 4 + (i * 2)) + '%', top: (56 + (i * 5) % 20) + '%',
+        transform:'translateZ(' + (-420 - i * 1050) + 'px)' + (i % 2 ? ' scaleX(-1)' : ''),
+        fontSize: (56 + (i * 13) % 52) + 'px', lineHeight:'1',
+        filter:'drop-shadow(0 0 20px rgba(26,162,79,.55))', opacity:'.95', pointerEvents:'none'
+      }});
+    }
+    const arrDots = arrData.map((s, i) => ({
+      n: i + 1,
+      go: () => this.arrGo(i),
+      style: {
+        width:'32px', height:'32px', borderRadius:'50%', border:'none', cursor:'pointer',
+        fontFamily:'inherit', fontWeight:'800', fontSize:'12.5px',
+        color: i === arrStep ? '#7a1500' : '#fff',
+        background: i === arrStep ? 'linear-gradient(180deg,#ffe879,#f4a82c)' : 'rgba(255,255,255,.14)',
+        boxShadow: i === arrStep ? '0 6px 18px rgba(244,168,44,.5)' : 'none',
+        transition:'all .3s ease'
+      }
+    }));
+    return {
+      sceneRef: this.scene, fgRef: this.fg, hdrRef: this.hdr, barRef: this.bar,
+      buildings, flies: this.flies,
+      arrSceneRef: this.arrScene,
+      arrWorld, arrPanels, arrDots, arrDeco,
+      arrNext: this.arrNext, arrPrev: this.arrPrev, arrPlay: this.arrPlay,
+      arrPlayLabel: this.state.arrPlaying ? '⏸ Ferma il percorso' : '▶ Guarda il percorso',
+      cats, editing, notEditing: !editing,
+      startEdit: () => this.setState({ editing: true }),
+      stopEdit: () => this.setState({ editing: false }),
+      addCat: () => this.addCat(),
+      resetMenu: () => this.saveMenu(this.defaultMenu()),
+      comboPrezzo: this.props.comboPrezzo ?? '55€',
+      mostraCombo: this.props.mostraCombo ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>
